@@ -1,19 +1,5 @@
 #!/usr/bin/env python
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                           
-#   ~ DoxTracker 1.0 beta ~                            
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#
-# CoDeD: bY KURO-CODE
-# DaTe: 03/12/2017
-# Dev: Python
-#
-#~~~~~~~~~~~ INFO ~~~~~~~~~~~~
-#
-#     Simple Doxing tool
-#
-#*****************************
-
 import sys, os, time, signal, webbrowser, platform, subprocess
 
 #~~~~ Keybord interruption ~~~~
@@ -25,7 +11,6 @@ def signal_handler(signal, frame):
 		EXITMENU()
 signal.signal(signal.SIGINT, signal_handler)
 
-#~~~ Function KURO ~~~~
 def KURO():
 	if os.name == 'nt':
             os.system('cls')
